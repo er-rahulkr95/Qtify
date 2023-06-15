@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className={navBarStyle.navBar}>
       <Logo />
-      <SearchBar />
+      <SearchBar placeholder="Search an album of your choice"/>
       <Button
         className={`${navBarStyle.feedBackButton} ${navBarStyle.feedBackText}`}
       >

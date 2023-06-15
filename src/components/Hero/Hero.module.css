@@ -1,0 +1,18 @@
+.heroWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    gap: 2rem;
+}
+
+.heroText{
+    color: var(--white-color);
+    text-align: center;
+   
+    
+}
+
+.heroText h1{
+    font-size: 2rem;
+}

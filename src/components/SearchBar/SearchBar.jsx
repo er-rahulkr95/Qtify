@@ -2,18 +2,24 @@ import React from "react";
 import Button from "../Button/Button";
 import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
 import searchBarStyle from  "./SearchBar.module.css";
-const SearchBar = () => {
+const SearchBar = ({placeholder}) => {
+
+  const onSubmit =(e)=>{
+    e.preventDefault();
+  }
+
   return (
-    <div className= {searchBarStyle.searchBarWrapper}>
+    <form className= {searchBarStyle.searchBarWrapper} onSubmit={onSubmit}>
       <input
         type="search"
         className={searchBarStyle.searchBar}
-        placeholder="Search an album of your choice"
+        placeholder={placeholder}
+        required
       />
-      <Button className={searchBarStyle.searchIcon}>
+      <Button className={searchBarStyle.searchIcon} type="submit">
         <SearchIcon />
       </Button>
-    </div>
+    </form>
   );
 };
 

@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+sectionTitle{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.toggleText{
+    color: var(--primary-color);
+font-size: 1.25rem;
+font-weight: 600;
+cursor: pointer;
+}
+
+.sectionCardWrapper{
+    width: 100%;
+    margin-top: 1.12rem;
+}
+
+.sectionCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}

@@ -6,6 +6,7 @@
   width: 159px;
   height: 232px;
   cursor: pointer;
+ 
 }
 
 .card {
@@ -24,14 +25,18 @@
   .followChip {
     background-color: var(--black-color);
     color: var(--white-color);
-    font-size: 10px;
-    letter-spacing: 0.2px;
+    font-size: 0.625rem;
   }
+}
+.cardTitleWrapper{
+  width: 100%;
 }
 
 .cardTitle {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #ffffff;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
 }

@@ -1,0 +1,12 @@
+.sections{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 2rem;
+}
+
+.divider{
+    background-color: var(--primary-color);
+    height: 0.0625rem;
+    border: none;
+}

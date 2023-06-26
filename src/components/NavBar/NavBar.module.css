@@ -1,26 +1,26 @@
 .navBar {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    padding: 0.8rem 2rem;
-  }
-  
-  .feedBackButton {
-    background-color: var(--black-color);
-    color: var(--primary-color);
-    height: 47px;
-    border: 1px solid var(--primary-color);
-    border-radius: 12px;
-    padding: 10px 16px;
-    cursor: pointer;
-  }
-  
-  .feedBackText {
-    font-weight: 600;
-    font-size: 1.125rem; /*18px*/
-    line-height: 27px;
-    letter-spacing: 0.25px;
-  }
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 0.8rem 2rem;
+}
+
+.feedBackButton {
+  background-color: var(--black-color);
+  color: var(--primary-color);
+  height: 47px;
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.feedBackText {
+  font-weight: 600;
+  font-size: 1.125rem; /*18px*/
+  line-height: 27px;
+  letter-spacing: 0.25px;
+}

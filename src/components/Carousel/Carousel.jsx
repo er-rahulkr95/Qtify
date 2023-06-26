@@ -6,15 +6,14 @@ import { Navigation } from "swiper";
 import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigation";
 import CarouselRightNavigation from "./CarouselRightNavigation/CarouselRightNavigation";
 
+const Controls = ({ data }) => {
+  const swiper = useSwiper();
+  useEffect(() => {
+    swiper.slideTo(0, null);
+  }, [data]);
+};
 
-const Controls =({data})=>{
-    const swiper = useSwiper();
-    useEffect(()=>{
-        swiper.slideTo(0,null)
-    },[data])
-}
-
-const Carousel = ({data,component}) => {
+const Carousel = ({ data, component }) => {
   return (
     <div className={carouselStyles.carouselWrapper}>
       <Swiper
@@ -25,15 +24,13 @@ const Carousel = ({data,component}) => {
         spaceBetween={40}
         allowTouchMove
       >
-        <Controls data={data}/>
-        
-        <CarouselLeftNavigation/>
-        <CarouselRightNavigation/>
-        {
-            data.map((item,index)=>(
-                <SwiperSlide key={index}>{component(item)}</SwiperSlide>
-            ))
-        }
+        <Controls data={data} />
+
+        <CarouselLeftNavigation />
+        <CarouselRightNavigation />
+        {data.map((item, index) => (
+          <SwiperSlide key={index}>{component(item)}</SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

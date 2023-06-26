@@ -1,66 +1,62 @@
-.accordionWrapper{
-        display: flex;
-        flex-direction: column;
-       border: 1px solid var(--white-color);
-       border-radius: 10px;
-       background-color: var(--white-color);
-        height: auto;
-        transition: all 0.5s ease;  
+.accordionWrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  background-color: var(--white-color);
+  height: auto;
+  transition: all 0.5s ease;
 }
 
-.accordion{
-    background-color: var(--black-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4.875rem;
-    border: 1px solid var(--white-color);
-    border-radius: 10px;
-    
+.accordion {
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.875rem;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
 }
-.arrow{
-    margin-right: 2rem;
-    transform: rotate(0deg);
-    transition: transform 0.5s ease;
-}
-
-.faqsQuery{
-    margin-left: 2rem;
-    font-size: 1.25rem;
-    font-weight: 500;
+.arrow {
+  margin-right: 2rem;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
 }
 
-.arrow.arrowActive{
-
-    transform: rotate(180deg);
+.faqsQuery {
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
-.arrow.arrowActive{
-    transition: transform 1s ease;
+.arrow.arrowActive {
+  transform: rotate(180deg);
 }
 
-.faqsDescription{
-    background-color: var(--white-color);
-    color: var(--black-color);
-    border-bottom: 0px transparent var(--white-color);
-    border-bottom: none;
-    border-radius: 0px;
-    font-size: 1.125rem;
-    font-weight: 500;
-    height: 0;
-    padding: 0;
-    width: 0;
-    overflow: hidden;
-    transition:all 0.5s ease;
-  
+.arrow.arrowActive {
+  transition: transform 1s ease;
 }
 
-.faqsDescription.active{
-    height: auto;
-    width: auto;
-    border-bottom: 1px solid var(--white-color);
-    border-radius: 10px;
-    padding: 1.5rem 2rem;
-    transition:all 1s ease;
-    
+.faqsDescription {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-bottom: 0px transparent var(--white-color);
+  border-bottom: none;
+  border-radius: 0px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  height: 0;
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.faqsDescription.active {
+  height: auto;
+  width: auto;
+  border-bottom: 1px solid var(--white-color);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  transition: all 1s ease;
 }

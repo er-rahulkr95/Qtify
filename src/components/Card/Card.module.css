@@ -6,19 +6,18 @@
   width: 9.9375rem;
   height: 14.5rem;
   cursor: pointer;
- 
 }
 
 .card {
   border-radius: 10px;
   overflow: hidden;
-  width:100%;
+  width: 100%;
   height: 12.8125rem;
 }
 
-.cardImage{
+.cardImage {
   width: 100%;
-height: 10.625rem;
+  height: 10.625rem;
 }
 .cardBanner {
   height: 2.19rem;
@@ -34,7 +33,7 @@ height: 10.625rem;
     font-size: 0.625rem;
   }
 }
-.cardTitleWrapper{
+.cardTitleWrapper {
   width: 100%;
 }
 

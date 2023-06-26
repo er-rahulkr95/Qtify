@@ -1,29 +1,29 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.sectionTitle{
-    font-size: 1.25rem;
-    font-weight: 600;
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-.toggleText{
-    color: var(--primary-color);
-font-size: 1.25rem;
-font-weight: 600;
-cursor: pointer;
-}
-
-.sectionCardWrapper{
-    width: 100%;
-    margin-top: 1.12rem;
+.toggleText {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.sectionCards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.3rem;
-    /* justify-content: space-between; */
-    padding-right: 1.4rem;
+.sectionCardWrapper {
+  width: 100%;
+  margin-top: 1.12rem;
+}
+
+.sectionCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.3rem;
+  /* justify-content: space-between; */
+  padding-right: 1.4rem;
 }

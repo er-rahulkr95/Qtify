@@ -1,9 +1,9 @@
-.faqsWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.faqsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.faqs{
+.faqs {
   display: flex;
   flex-direction: column;
   justify-content: center;

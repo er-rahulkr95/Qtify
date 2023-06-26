@@ -8,7 +8,7 @@ const Card = ({data, type}) => {
     <Tooltip title={`${songs.length} songs`} placement="top" arrow>
       <div className={cardStyle.cardWrapper}>
         <div className={cardStyle.card}>
-            <img src={image} alt={title} width={159} height={170}/>
+            <img src={image} alt={title} className={cardStyle.cardImage}/>
             <div className={cardStyle.cardBanner}>
                 <Chip label={`${follows} Follows`} size='small' className={cardStyle.followChip}/>
             </div>

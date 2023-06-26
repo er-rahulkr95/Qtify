@@ -3,8 +3,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import sectionStyles from "./Section.module.css"
 import CardSection from '../CardSection/CardSection';
+import Carousel from '../Carousel/Carousel';
 const Section = ({title, data, type, album}) => {
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(true)
 
     const handleToggle = ()=>{
         setToggle(!toggle)
@@ -28,7 +29,7 @@ const Section = ({title, data, type, album}) => {
                                 <CardSection key={item.id} data={item} type={type}/>
                             ))
                         }
-                    </div>):(<></>)}
+                    </div>):(<Carousel data={data} component={(data)=><CardSection data={data} type={type}/>}/>)}
                 </div>
             )
         }

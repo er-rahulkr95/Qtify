@@ -22,7 +22,7 @@ const Carousel = ({data,component}) => {
         initialSlide={0}
         modules={[Navigation]}
         slidesPerView={"auto"}
-        spaceBetween={50}
+        spaceBetween={40}
         allowTouchMove
       >
         <Controls data={data}/>
@@ -30,8 +30,8 @@ const Carousel = ({data,component}) => {
         <CarouselLeftNavigation/>
         <CarouselRightNavigation/>
         {
-            data.map(item=>(
-                <SwiperSlide>{component(item)}</SwiperSlide>
+            data.map((item,index)=>(
+                <SwiperSlide key={index}>{component(item)}</SwiperSlide>
             ))
         }
       </Swiper>
